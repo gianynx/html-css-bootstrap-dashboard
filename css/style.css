@@ -4,8 +4,8 @@ CSS GENERAL
 
 :root {
     --bg_body: #f8f9fa;
-    --primary_color: #ffffff;
     --sidebar_color: #051e34;
+    --aside_badge_color: #165bba;
 }
 
 body {
@@ -16,12 +16,20 @@ body {
 CSS UTILITIES
 *****************************************************/
 
+.m_l_15 {
+    margin-left: 15px;
+}
+
 .p_l_5 {
     padding-left: 5px;
 }
 
 .p_l_15 {
     padding-left: 15px;
+}
+
+.p_t_10 {
+    padding-top: 10px;
 }
 
 .grid {
@@ -57,7 +65,7 @@ header form {
 }
 
 /*****************************************************
-WRAPPER
+.WRAPPER
 *****************************************************/
 
 .wrapper {
@@ -66,7 +74,7 @@ WRAPPER
 }
 
 /*****************************************************
-SIDEBAR
+#SIDEBAR
 *****************************************************/
 
 #sidebar {
@@ -95,6 +103,31 @@ MAIN
 *****************************************************/
 
 main {
-    overflow-y: auto;
     height: 100%;
+}
+
+/*****************************************************
+.ASIDE
+*****************************************************/
+
+.aside_left {
+    width: 40%;
+}
+
+.aside_center {
+    width: 20%;
+}
+
+.aside_right {
+    width: 20%;
+}
+
+.aside .badge {
+    height: 1rem;
+    background-color: var(--aside_badge_color);
+    padding-bottom: 15px;
+}
+
+.aside_right a {
+    height: 2rem;
 }
