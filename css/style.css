@@ -15,6 +15,10 @@ body {
 CSS UTILITIES
 *****************************************************/
 
+.p {
+    padding-left: 5px;
+}
+
 .grid {
     border: 2px solid black;
 }
@@ -29,6 +33,22 @@ HEADER
 
 header {
     height: 70px;
+}
+
+.container_img {
+    width: 180px;
+}
+
+#logo {
+    width: 100%;
+}
+
+header nav {
+    height: 100%;
+}
+
+header form {
+    width: 79%;
 }
 
 /*****************************************************
