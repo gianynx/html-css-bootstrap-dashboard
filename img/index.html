@@ -12,23 +12,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="fixed-top">
         <nav class="bg-white d-flex justify-content-between align-items-center">
             <div class="container_img">
-                <a href="#"><img id="large_logo" src="./img/logo.svg" alt="large_logo_dashboard"></a>
-                <a href="#"><img id="small_logo" src="./img/mobile-logo.png" alt="small_logo_dashboard"></a>
+                <a href="#"><img id="large_logo" src="./img/img/logo.svg" alt="logo_dashboard"></a>
             </div>
             <form>
                 <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel"
                     aria-label="Search">
             </form>
-            <div class="nav_right overflow-hidden fs-5">
+            <div class="nav_right overflow-hidden fs-5 grid">
                 <a href="#"><i class="fa-solid fa-list p_l_15"></i></a>
                 <a href="#"><i class="fa-solid fa-circle-question p_l_15"></i></a>
                 <a href="#"><i class="fa-solid fa-ellipsis-vertical p_l_15"></i></a>
@@ -40,42 +36,46 @@
         <nav id="sidebar" class="text-white flex-shrink-0">
             <div class="sidebar_top">
                 <ul>
-                    <li class="p_t_20"><a class="text-white" href="#"><i class="fa-solid fa-house fs-5"></i><span class="p_l_15">Home</span></a></li>
-                    <li class="p_t_15"><a class="text-white" href="#"><i class="fa-sharp fa-solid fa-chart-simple fs-5"></i><span class="p_l_17">Stats</span></a></li>
-                    <li class="p_t_15"><a class="text-white" href="#"><i class="fa-solid fa-signal fs-5"></i><span class="p_l_15">Signals</span></a></li>
+                    <li><i class="fa-solid fa-house"></i><span class="p_l_15">Home</span></li>
+                    <li><i class="fa-sharp fa-solid fa-chart-simple "></i><span class="p_l_15">Stats</span></li>
+                    <li><i class="fa-solid fa-signal"></i><span class="p_l_15">Signals</span></li>
                 </ul>
             </div>
             <div class="sidebar_bottom">
-                <a class="text-white" href="#"><i class="fa-solid fa-gear fs-5"></i><span class="p_l_15">Admin</span></a>
+                <i class="fa-solid fa-gear"></i><span class="p_l_15">Admin</span>
             </div>
         </nav>
         <main class="flex-grow-1 overflow-y-auto">
-            <div class="aside bg-primary text-white container-fluid">
-                <div class="flex_aside-row">
-                    <div class="flex_aside-row">
-                        <div class="flex_aside-col">
-                            <div class="d-flex align-items-center">
-                                <h1 class="fs-3 p_t_20">Boolean</h1>
-                                <span class="badge rounded-pill text-white m_l_15 m_t_10">Piano blaze</span>
-                            </div>
+            <div class="aside bg-primary text-white container-fluid d-flex justify-content-between">
+                <div class="aside_left">
+                    <div class="d-flex flex-column">
+                        <div class="d-flex flex-row align-items-center">
+                            <h1 class="fs-3 fw-bold">Boolean</h1><span
+                                class="badge rounded-pill text-white m_l_15">Piano blaze</span>
+                        </div>
+                        <div>
                             <nav style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><span class="badge rounded-pill text-white">3 app</span></li>
-                                    <li class="breadcrumb-item" aria-current="page"><span class="badge rounded-pill text-white">&#43;</span></li>
+                                    <li class="breadcrumb-item"><span class="badge rounded-pill text-white">Piano
+                                            blaze</span></li>
+                                    <li class="breadcrumb-item" aria-current="page"><span
+                                            class="badge rounded-pill text-white">Piano blaze</span><span
+                                            class="badge rounded-pill text-white">Piano blaze</span><span
+                                            class="badge rounded-pill text-white">Piano blaze</span>
+                                    </li>
                                 </ol>
                             </nav>
                         </div>
                     </div>
-                    <div class="flex_aside-row">
-                        <div id="students" class="flex_aside-col">
-                            <span>Studenti online negli ultimi 30 minuti</span>
-                            <div class="fs-3">125</div>
-                        </div>
-                    </div>
-                    <div class="new_student flex_aside-row p_b_20">
-                        <span>Nuovo Studente</span>
-                        <a class="btn btn-primary m_l_15 position-relative border-white" href="#" role="button"><span class="position-absolute top-50 start-50 translate-middle fs-3">&#43;</span></a>
-                    </div>
+                </div>
+                <div class="aside_center d-flex flex-column p_t_10">
+                    <span>Studenti online negli ultimi 30 minuti</span>
+                    <span class="fs-3">125</span>
+                </div>
+                <div class="aside_right d-flex flex-row align-items-center">
+                    <span>Nuovo studente</span>
+                    <a class="btn btn-primary m_l_15 position-relative border-white" href="#" role="button"><span
+                            class="position-absolute top-50 start-50 translate-middle">&#43;</span></a>
                 </div>
             </div>
             <section class="container-fluid">
@@ -195,7 +195,7 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div id="stats" class="card">
-                                        <img src="./img/stats.jpeg" class="card-img-top" alt="stats_img">
+                                        <img src="./img/img/stats.jpeg" class="card-img-top" alt="stats_img">
                                         <div class="card-body">
                                             <h5 class="card-title">Utenti attivi</h5>
                                             <p class="card-text">Lista degli utenti attivi nell'ultimo mese</p>

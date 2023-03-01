@@ -6,10 +6,14 @@ CSS GENERAL
     --bg_body: #f8f9fa;
     --sidebar_color: #051e34;
     --aside_badge_color: #165bba;
+    --form_color: #e5e5e5;
+    --icons_nav_color: #5b5858;
+    --bell_color: #ff8f00;
 }
 
 body {
     background-color: var(--bg_body);
+    font-family: 'Open Sans', sans-serif;
 }
 
 /*****************************************************
@@ -20,6 +24,14 @@ CSS UTILITIES
     margin-left: 15px;
 }
 
+.m_t_10 {
+    margin-top: 10px;
+}
+
+.p_b_20 {
+    padding-bottom: 20px;
+}
+
 .p_l_5 {
     padding-left: 5px;
 }
@@ -28,8 +40,28 @@ CSS UTILITIES
     padding-left: 15px;
 }
 
+.p_l_17 {
+    padding-left: 20px;
+}
+
+.p_r_15 {
+    padding-right: 10px;
+}
+
 .p_t_10 {
     padding-top: 10px;
+}
+
+.p_t_15 {
+    padding-top: 15px;
+}
+
+.p_t_20 {
+    padding-top: 20px;
+}
+
+.p_t_30 {
+    padding-top: 30px;
 }
 
 .grid {
@@ -49,11 +81,17 @@ header {
 }
 
 .container_img {
-    width: 180px;
+    width: 5rem;
+    height: 100%;
+    padding: 10px 11px;
 }
 
-#logo {
+#large_logo {
     width: 100%;
+}
+
+#small_logo {
+    width: 3.5rem;
 }
 
 header nav {
@@ -61,7 +99,23 @@ header nav {
 }
 
 header form {
-    width: 79%;
+    width: 80%;
+}
+
+header form .form-control {
+    background-color: var(--form_color);
+}
+
+.nav_right a {
+    color: var(--icons_nav_color);
+}
+
+.fa-bell {
+    color: var(--bell_color);
+}
+
+.nav_right {
+    width: 4rem;
 }
 
 /*****************************************************
@@ -79,14 +133,13 @@ header form {
 
 #sidebar {
     height: 100%;
-    width: 180px;
-    background-image: url(../img/img/sidebar-bg.png);
+    width: 5rem;
+    background-image: url(../img/sidebar-bg.png);
     background-color: var(--sidebar_color);
 }
 
 .sidebar_top {
     height: calc(100% - 60px);
-    padding: 30px 30px 0 10px;
 }
 
 .sidebar_bottom {
@@ -98,21 +151,13 @@ ul {
     list-style: none;
 }
 
+.sidebar_top ul i:hover, .sidebar_bottom i:hover {
+    color: var(--aside_badge_color);
+}
+
 /*****************************************************
 .ASIDE
 *****************************************************/
-
-.aside_left {
-    width: 40%;
-}
-
-.aside_center {
-    width: 20%;
-}
-
-.aside_right {
-    width: 20%;
-}
 
 .aside .badge {
     height: 1rem;
@@ -120,8 +165,13 @@ ul {
     padding-bottom: 15px;
 }
 
-.aside_right a {
-    height: 2rem;
+.aside .new_student a {
+    height: 3rem;
+    width: 3rem;
+}
+
+.aside .new_student a:hover {
+    background-color: var(--sidebar_color);
 }
 
 /*****************************************************
@@ -135,4 +185,107 @@ main {
 #stats {
     width: 90%;
     margin: 15px;
+}
+
+/*****************************************************
+@MEDIA
+*****************************************************/
+
+@media screen and (min-width:768px) {
+    .flex_aside-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .flex_aside-col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #students {
+        padding-top: 20px;
+    }
+
+    .new_student {
+        padding-bottom: 17px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    #large_logo {
+        display: none;
+    }
+
+    .nav_right .fa-list {
+        display: none;
+    }
+
+    .nav_right .fa-circle-question {
+        display: none;
+    }
+
+    .nav_right .fa-ellipsis-vertical {
+        display: none;
+    }
+
+    #sidebar .sidebar_top span {
+        display: none;
+    }
+
+    #sidebar .sidebar_bottom span {
+        display: none;
+    }
+}
+
+@media screen and (min-width:992px) {
+    #small_logo {
+        display: none;
+    }
+
+    #large_logo {
+        display: block;
+    }
+
+    .container_img:hover {
+        background-color: rgb(135, 206, 235);
+    }
+
+    .container_img {
+        width: 180px;
+        padding: 18px 10px;
+    }
+
+    header form {
+        width: 60%;
+    }
+
+    .nav_right {
+        width: 150px;
+    }
+
+    #sidebar {
+        width: 180px;
+    }
+
+    .sidebar_top li a {
+        text-decoration: none;
+    }
+
+    .sidebar_bottom a {
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    header form {
+        width: 70%;
+    }
+}
+
+@media screen and (max-height:250px) {
+    .sidebar_top ul li {
+        display: none;
+    }
 }
