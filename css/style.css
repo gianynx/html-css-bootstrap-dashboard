@@ -20,6 +20,10 @@ body {
 CSS UTILITIES
 *****************************************************/
 
+.m_l_5 {
+    margin-left: 5px;
+}
+
 .m_l_15 {
     margin-left: 15px;
 }
@@ -174,6 +178,21 @@ ul {
     background-color: var(--sidebar_color);
 }
 
+.aside_boolean {
+    width: 100%;
+    overflow: hidden;
+}
+
+.aside_boolean-center {
+    width: 100%;
+    overflow: hidden;
+}
+
+.aside_boolean-bottom {
+    width: 100%;
+    overflow: hidden;
+}
+
 /*****************************************************
 MAIN
 *****************************************************/
@@ -211,6 +230,25 @@ main {
     .new_student {
         padding-bottom: 17px;
     }
+
+    .aside_boolean {
+        width: 90%;
+        margin-right: 20px;
+    }
+
+    .aside_boolean-center {
+        width: 100%;
+    }
+
+    .aside_boolean-bottom {
+        width: 25%;
+    }
+
+    .aside_boolean-bottom {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width:991px) {
@@ -235,6 +273,10 @@ main {
     }
 
     #sidebar .sidebar_bottom span {
+        display: none;
+    }
+
+    .badge_desk {
         display: none;
     }
 }
@@ -275,6 +317,18 @@ main {
 
     .sidebar_bottom a {
         text-decoration: none;
+    }
+
+    #plus {
+        display: none;
+    }
+
+    .badge_desk {
+        display: block;
+    }
+
+    .aside_boolean {
+        width: 100%;
     }
 }
 
