@@ -33,7 +33,31 @@
                 <a href="#"><i class="fa-solid fa-list p_l_15"></i></a>
                 <a href="#"><i class="fa-solid fa-circle-question p_l_15"></i></a>
                 <a href="#"><i class="fa-solid fa-ellipsis-vertical p_l_15"></i></a>
-                <a href="#"><i class="fa-solid fa-bell p_l_15 p_r_15"></i></a>
+                <a href="#"><i class="fa-solid fa-bell p_l_15 p_r_15" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"></i></a>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                    id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title small" id="offcanvasScrollingLabel">Inserisci un nuovo studente</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="container">
+                            <form class="row g-3 needs-validation" novalidate>
+                                <div class="col-lg-6">
+                                    <label for="validationCustom01" class="form-label"></label>
+                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Nome"
+                                        required>
+                                </div>
+                                <div class="col-lg-6">
+                                    <label for="validationCustom01" class="form-label"></label>
+                                    <input type="text" class="form-control" id="validationCustom01"
+                                        placeholder="Cognome" required>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -357,15 +381,16 @@
                                                 <input class="form-check-input" type="checkbox" value=""
                                                     aria-label="Checkbox for following text input">
                                             </div>
-                                            <input type="text" class="form-control" aria-label="Text input with checkbox"
-                                                value="Kickoff nuove classi">
+                                            <input type="text" class="form-control"
+                                                aria-label="Text input with checkbox" value="Kickoff nuove classi">
                                         </div>
                                         <div class="input-group">
                                             <div class="input-group-text">
                                                 <input class="form-check-input" type="checkbox" value=""
                                                     aria-label="Checkbox for following text input">
                                             </div>
-                                            <input type="text" class="form-control" aria-label="Text input with checkbox"
+                                            <input type="text" class="form-control"
+                                                aria-label="Text input with checkbox"
                                                 value="Lezione su Bootstrap 5 in classe #92">
                                         </div>
                                         <div class="input-group">
@@ -373,7 +398,8 @@
                                                 <input class="form-check-input" type="checkbox" value=""
                                                     aria-label="Checkbox for following text input">
                                             </div>
-                                            <input type="text" class="form-control" aria-label="Text input with checkbox"
+                                            <input type="text" class="form-control"
+                                                aria-label="Text input with checkbox"
                                                 value="Controllare username Github studenti">
                                         </div>
                                     </div>
