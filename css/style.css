@@ -23,6 +23,10 @@ body {
 CSS UTILITIES
 *****************************************************/
 
+.m_15 {
+    margin: 15px;
+}
+
 .m_b_6r {
     margin-bottom: 6rem;
 }
@@ -228,7 +232,6 @@ main {
 
 #stats {
     width: 90%;
-    margin: 15px;
 }
 
 .table thead tr .col_left, .table tbody tr .col_left {
