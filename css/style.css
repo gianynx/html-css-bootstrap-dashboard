@@ -98,11 +98,11 @@ header nav {
     height: 100%;
 }
 
-header form {
+header .input {
     width: 80%;
 }
 
-header form .form-control {
+header .input .form-control {
     background-color: var(--form_color);
 }
 
@@ -257,7 +257,7 @@ main {
         padding: 18px 10px;
     }
 
-    header form {
+    header .input {
         width: 60%;
     }
 
@@ -279,7 +279,7 @@ main {
 }
 
 @media screen and (min-width:1200px) {
-    header form {
+    header input {
         width: 70%;
     }
 }
