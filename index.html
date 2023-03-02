@@ -40,13 +40,19 @@
         <nav id="sidebar" class="text-white flex-shrink-0">
             <div class="sidebar_top">
                 <ul>
-                    <li class="p_t_20"><a class="text-white" href="#"><i class="fa-solid fa-house fs-5"></i><span class="p_l_15">Home</span></a></li>
-                    <li class="p_t_15"><a class="text-white" href="#"><i class="fa-sharp fa-solid fa-chart-simple fs-5"></i><span class="p_l_17">Stats</span></a></li>
-                    <li class="p_t_15"><a class="text-white" href="#"><i class="fa-solid fa-signal fs-5"></i><span class="p_l_15">Signals</span></a></li>
+                    <div class="list_item p_t_20">
+                        <li><a class="text-white" href="#"><i class="fa-solid fa-house fs-5"></i><span class="p_l_15 small">Home</span></a></li>
+                    </div>
+                    <div class="list_item p_t_20">
+                        <li><a class="text-white" href="#"><i class="fa-sharp fa-solid fa-chart-simple fs-5"></i><span class="p_l_17 small">Stats</span></a></li>
+                    </div>    
+                    <div class="list_item p_t_20">
+                        <li><a class="text-white" href="#"><i class="fa-solid fa-signal fs-5"></i><span class="p_l_15 small">Signals</span></a></li>
+                    </div>
                 </ul>
             </div>
             <div class="sidebar_bottom">
-                <a class="text-white" href="#"><i class="fa-solid fa-gear fs-5"></i><span class="p_l_15">Admin</span></a>
+                <a class="text-white" href="#"><i class="fa-solid fa-gear fs-5"></i><span class="p_l_15 small">Admin</span></a>
             </div>
         </nav>
         <main class="flex-grow-1 overflow-y-auto">
@@ -56,24 +62,24 @@
                         <div class="flex_aside-col aside_boolean">
                             <div class="d-flex align-items-center">
                                 <h1 class="fs-3 p_t_20">Boolean</h1>
-                                <span class="badge rounded-pill text-white m_l_15 m_t_10">Piano blaze</span>
+                                <span class="badge rounded-pill m_l_15 m_t_10"><a class="text-decoration-none text-white small" href="#">Piano blaze</a></span>
                             </div>
                             <nav style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><span class="badge rounded-pill text-white">3 app</span></li>
-                                    <li class="breadcrumb-item" aria-current="page"><span id="plus" class="badge rounded-pill text-white">&#43;</span></li><span class="badge rounded-pill text-white badge_desk m_l_5">Piano blaze</span><span class="badge rounded-pill text-white badge_desk m_l_5">Piano blaze</span><span class="badge rounded-pill text-white badge_desk m_l_5">Piano blaze</span>
+                                    <li class="breadcrumb-item"><span class="badge rounded-pill text-white"><a class="text-decoration-none text-white small" href="#">3 app</a></span></li>
+                                    <li class="breadcrumb-item" aria-current="page"><span id="plus" class="badge rounded-pill text-white"><a class="text-decoration-none text-white" href="#">&#43;</a></span></li><span class="badge rounded-pill text-white badge_desk m_l_5"><a class="text-decoration-none text-white small" href="#">Boolean mobile app</a></span><span class="badge rounded-pill text-white badge_desk m_l_5"><a class="text-decoration-none text-white small" href="#">Boolean web app</a></span><span class="badge rounded-pill text-white badge_desk m_l_5"><a class="text-decoration-none text-white small" href="#">Boolean blog app</a></span>
                                 </ol>
                             </nav>
                         </div>
                     </div>
                     <div class="flex_aside-row">
                         <div id="students" class="flex_aside-col aside_boolean-center">
-                            <span>Studenti online negli ultimi 30 minuti</span>
+                            <span class="small">Studenti online negli ultimi 30 minuti</span>
                             <div class="fs-3">125</div>
                         </div>
                     </div>
                     <div class="new_student p_b_20 aside_boolean-bottom">
-                        <span>Nuovo Studente</span>
+                        <span class="small">Nuovo Studente</span>
                         <a class="btn btn-primary m_l_15 position-relative border-white" href="#" role="button"><span class="position-absolute top-50 start-50 translate-middle fs-3">&#43;</span></a>
                     </div>
                 </div>

@@ -169,13 +169,19 @@ ul {
     padding-bottom: 15px;
 }
 
+.aside .badge:hover {
+    background-color: #00e165;
+    opacity: 1;
+}
+
 .aside .new_student a {
     height: 3rem;
     width: 3rem;
 }
 
 .aside .new_student a:hover {
-    background-color: var(--sidebar_color);
+    background-color: #00e165;
+    opacity: 1;
 }
 
 .aside_boolean {
@@ -275,10 +281,6 @@ main {
     #sidebar .sidebar_bottom span {
         display: none;
     }
-
-    .badge_desk {
-        display: none;
-    }
 }
 
 @media screen and (min-width:992px) {
@@ -319,6 +321,37 @@ main {
         text-decoration: none;
     }
 
+    .sidebar_top .list_item {
+        margin-right: 4rem;
+        margin-top: 1rem;
+        padding: 5px 5px;
+        padding-left: 8px;
+    }
+    
+    .sidebar_top .list_item:hover {
+        background-color: #00e165;
+        opacity: 1;
+        border: 1.5px dotted var(--sidebar_color);
+    }
+    
+    .sidebar_bottom {
+        padding: 12px 30px;
+    }
+    
+    .sidebar_bottom:hover {
+        background-color: #00e165;
+        opacity: 1;
+        border: 1.5px dotted var(--sidebar_color);
+    }
+}
+
+@media screen and (max-width:1010px) {
+    .badge_desk {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1010px) {
     #plus {
         display: none;
     }
@@ -329,6 +362,10 @@ main {
 
     .aside_boolean {
         width: 100%;
+    }
+
+    .aside_boolean-bottom {
+        padding-left: 2rem;
     }
 }
 
