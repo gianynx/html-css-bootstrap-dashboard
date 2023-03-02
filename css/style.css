@@ -9,6 +9,9 @@ CSS GENERAL
     --form_color: #e5e5e5;
     --icons_nav_color: #5b5858;
     --bell_color: #ff8f00;
+    --done_badge: #198754;
+    --process_badge: #ffc107;
+    --failed_badge: #de4351;
 }
 
 body {
@@ -28,8 +31,16 @@ CSS UTILITIES
     margin-left: 15px;
 }
 
+.m_r_5 {
+    margin-right: 5px;
+}
+
 .m_t_10 {
     margin-top: 10px;
+}
+
+.m_t_25 {
+    margin-top: 25px;
 }
 
 .p_b_20 {
@@ -46,6 +57,10 @@ CSS UTILITIES
 
 .p_l_17 {
     padding-left: 20px;
+}
+
+.p_r_5 {
+    padding-right: 5px;
 }
 
 .p_r_15 {
@@ -210,6 +225,56 @@ main {
 #stats {
     width: 90%;
     margin: 15px;
+}
+
+.table thead tr .col_left, .table tbody tr .col_left {
+   padding-left: 15px;
+}
+
+.table thead .col_center {
+    width: 9rem;
+}
+
+.table .col_left {
+    width: auto;
+}
+
+.table tbody img {
+    width: 25px;
+}
+
+.done {
+    background-color: var(--done_badge);
+}
+
+#process {
+    background-color: var(--process_badge);
+}
+
+.badge_table {
+    padding: 5px 10px;
+    padding-top: 2px;
+}
+
+.done:hover {
+    padding: 7px 12px;
+}
+
+#process:hover {
+    padding: 7px 10px;
+}
+
+.table button:hover {
+    background-color: #00e165;
+    opacity: 0.9;
+}
+
+.failed {
+    background-color: var(--failed_badge);
+}
+
+.failed:hover {
+    padding: 7px 11px;
 }
 
 /*****************************************************
