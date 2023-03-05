@@ -46,13 +46,92 @@
                             <form class="row g-3 needs-validation" novalidate>
                                 <div class="col-lg-6">
                                     <label for="validationCustom01" class="form-label"></label>
-                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Nome"
+                                    <input type="text" name="validationCustom01" class="form-control" id="validationCustom01" placeholder="Nome"
                                         required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid first name!
+                                    </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <label for="validationCustom01" class="form-label"></label>
-                                    <input type="text" class="form-control" id="validationCustom01"
+                                    <input type="text" name="validationCustom01" class="form-control" id="validationCustom01"
                                         placeholder="Cognome" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid last name!
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                        <input type="text" class="form-control" placeholder="Email"
+                                            aria-label="Username" aria-describedby="basic-addon1" required>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid email!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="password" id="inputPassword6" class="form-control"
+                                        aria-describedby="passwordHelpInline" placeholder="Password" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid password!
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 ">
+                                    <label for="validationCustom01" class="form-label"></label>
+                                    <input type="text" name="validationCustom01" class="form-control" id="validationCustom01"
+                                        placeholder="Indirizzo" required>
+                                </div>
+                                <div class="col-lg-6">
+                                    <label for="validationCustom03" class="form-label"></label>
+                                    <input type="text" name="validationCustom03" class="form-control" id="validationCustom03" placeholder="Città"
+                                        required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid city!
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <label for="validationCustom04" class="form-label"></label>
+                                    <select class="form-select" name="validationCustom04" id="validationCustom04" required>
+                                        <option class="small" selected disabled value="">Stato</option>
+                                        <option>Italy</option>
+                                        <option>England</option>
+                                        <option>France</option>
+                                        <option>Deutschland</option>
+                                        <option>España</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select a valid state!
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <label for="validationCustom05" class="form-label"></label>
+                                    <input type="text" name="validationCustom05" class="form-control" id="validationCustom05" placeholder="CAP"
+                                        required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid zip!
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="input-group mb-3">
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            id="button-addon1">Scegli file</button>
+                                        <input type="text" class="form-control" placeholder="Nessun file selezionato"
+                                            aria-label="Example text with button addon"
+                                            aria-describedby="button-addon1">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="" value="flexCheckDefault" id="flexCheckDefault">
+                                        <label class="form-check-label small" for="flexCheckDefault">
+                                            Seleziona per proseguire
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <button type="button" class="btn btn-primary">Salva</button>
+                                    <button type="button" class="btn btn-warning">Svuota</button>
                                 </div>
                             </form>
                         </div>
